@@ -1,0 +1,45 @@
+{
+  "name": "assign-no-conflict",
+  "version": "1.0.0",
+  "description": "Object.assign that does not allow overriding keys",
+  "main": "index.js",
+  "engines": { 
+    "node" : ">=6.4.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "test": "jest",
+    "lint": "standard --verbose | snazzy",
+    "prerelease": "npm run lint && jest --coverage",
+    "release": "standard-version",
+    "watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Acatl Pacheco <acatl.pacheco@viacom.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "jest": "latest",
+    "lint-staged": "4.0.2",
+    "prettier-standard": "6.0.0",
+    "snazzy": "7.0.0",
+    "standard": "8.6.0",
+    "standard-version": "4.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add",
+      "standard",
+      "jest --bail --findRelatedTests"
+    ]
+  }
+}
+
