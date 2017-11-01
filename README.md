@@ -1,5 +1,7 @@
 # AssignNoConflict
 
+[![Build Status](https://travis-ci.org/acatl/assign-no-conflict.svg?branch=master)](https://travis-ci.org/acatl/assign-no-conflict) [![Coverage Status](https://coveralls.io/repos/github/acatl/assign-no-conflict/badge.svg?branch=master)](https://coveralls.io/github/acatl/assign-no-conflict?branch=master)
+
 > Safely merges Objects without overriding keys
 
 ### Installing
