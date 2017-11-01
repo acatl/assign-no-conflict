@@ -49,7 +49,7 @@ console.log(abc)
 */
 ```
 
-Merging 3 objects that **have conflicts** together:
+Merging 3 objects that **have conflicts**:
 
 ```js
 const assign = require('assign-no-conflict')
@@ -79,11 +79,11 @@ This module mainly has two differences with Object.assign:
 - If **no conflicts**, it will return a **new** Object, no need to pass an empty object at the beginning. 
 - If there are conflicts it will return the key that introduces the conflict. You can check the return type, if its a string, then you can tell there are conflicts and which is the key that caused it.
 
-**NOTE**: This module does not deep merge.
+**NOTE**: This module does not deep merge Objects.
 
 ### Heads up 
 
-Only use this module if specifically need its features, otherwise you might be better off using good old Object.assign. 
+Only use this module if you specifically need to check for conflicting keys, otherwise you might be better off using good old Object.assign. 
 
 ## Running the tests
 
