@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Object.assign that does not allow overriding keys",
   "main": "index.js",
-  "engines": { 
-    "node" : ">=6.4.0"
+  "engines": {
+    "node": ">=6.4.0"
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -42,4 +42,3 @@
     ]
   }
 }
-
